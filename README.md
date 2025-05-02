@@ -1,6 +1,3 @@
-Certainly! Here's a GitHub-style `README.md` you can include directly in your repository:
-
----
 
 # 🧬 get_submission_report.sh
 
