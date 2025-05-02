@@ -1,7 +1,18 @@
 #!/bin/bash
 
+#SBATCH --job-name=report     # Job name
+#SBATCH --output=/dev/null
+#SBATCH --error=/dev/null
+#SBATCH --partition=vgl_a # Partition/queue to use
+#SBATCH --account=vgl_condo_bank
+#SBATCH --time=10:00:00
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=16
+
+
 set -e  # Exit on any error
 
+exec >"$LOGFILE" 2>&1
 LOGFILE="report.log"
 
 log() {
